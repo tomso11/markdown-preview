@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { marked } from 'marked';
-import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+
+//import 'bootstrap';
 
 const initialState = `# Welcome to my React Markdown Previewer!
 
@@ -66,7 +68,7 @@ class App extends React.Component{
       <div>
         <h2 className="text-center mt-4">Markdown preview</h2>
         <div className="row">
-          <div className="col-6">
+          <div className="col-6">          
             <h6 className="text-center">Enter your markdown</h6>
             <textarea className="form-control p-2" id="editor" value={text} onChange={this.handleChange}/>
           </div>
